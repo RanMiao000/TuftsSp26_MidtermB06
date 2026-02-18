@@ -1,0 +1,13 @@
+# Normalize all text files to LF (Mac style) in the repo history
+* text=auto eol=lf
+
+# Force specific Windows-only files to stay CRLF
+*.sln text eol=crlf
+*.csproj text eol=crlf
+
+# Ensure Unity binary files are never mangled by line ending conversions
+*.unity binary
+*.prefab binary
+*.asset binary
+*.mat binary
+*.meta binary
