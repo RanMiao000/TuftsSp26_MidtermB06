@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e137f3f24bfcc4542a31a8ab3c55aca5
+guid: 7b5dc702c99e24cf287af799d805b3a3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4559889470708902570
-    second: Oceanbg_0
+      213: 2517242217934724507
+    second: Pineapple 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Oceanbg_0
+      name: Pineapple 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 512
-        height: 512
+        x: 461
+        y: 233
+        width: 276
+        height: 233
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6551a5b8fa408b0c0800000000000000
-      internalID: -4559889470708902570
+      spriteID: b9d9d95d57a0fe220800000000000000
+      internalID: 2517242217934724507
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Oceanbg_0: -4559889470708902570
+      Pineapple 1_0: 2517242217934724507
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

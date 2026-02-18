@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e137f3f24bfcc4542a31a8ab3c55aca5
+guid: 4e49eb4398275444abf9df0d5289c0f9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4559889470708902570
-    second: Oceanbg_0
+      213: -4470592730861715767
+    second: cheese_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Oceanbg_0
+      name: cheese_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 512
-        height: 512
+        x: 215
+        y: 245
+        width: 291
+        height: 228
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6551a5b8fa408b0c0800000000000000
-      internalID: -4559889470708902570
+      spriteID: 9ce3b85f89345f1c0800000000000000
+      internalID: -4470592730861715767
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Oceanbg_0: -4559889470708902570
+      cheese_0: -4470592730861715767
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

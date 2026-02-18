@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e137f3f24bfcc4542a31a8ab3c55aca5
+guid: b6cc2c7c5c51346c790439413cdb7fc4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4559889470708902570
-    second: Oceanbg_0
+      213: -8156526432797010691
+    second: "\u672A\u547D\u540D\u4F5C\u54C1 2_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Oceanbg_0
+      name: "\u672A\u547D\u540D\u4F5C\u54C1 2_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 512
-        height: 512
+        width: 1152
+        height: 648
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6551a5b8fa408b0c0800000000000000
-      internalID: -4559889470708902570
+      spriteID: df4dc0cac623ece80800000000000000
+      internalID: -8156526432797010691
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Oceanbg_0: -4559889470708902570
+      "\u672A\u547D\u540D\u4F5C\u54C1 2_0": -8156526432797010691
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
