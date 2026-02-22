@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 567b085a9eec34ef29ba36d00025f4b9
+guid: 350b093f87ec64f5590db809f9f2fcf7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3808327296473899443
-    second: KitchenBackground_0
+      213: -7229086047103362753
+    second: House 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KitchenBackground_0
+      name: House 1_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 194
         y: 0
-        width: 1152
-        height: 648
+        width: 838
+        height: 875
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3b120ceaf75e9d430800000000000000
-      internalID: 3808327296473899443
+      spriteID: f39dbaf9a802dab90800000000000000
+      internalID: -7229086047103362753
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      KitchenBackground_0: 3808327296473899443
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

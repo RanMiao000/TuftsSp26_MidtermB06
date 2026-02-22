@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dough without air bubbles _0: 3792916189156602572
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

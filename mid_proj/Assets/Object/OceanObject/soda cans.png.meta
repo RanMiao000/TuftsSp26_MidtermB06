@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      soda cans_0: 4495598942681081499
+      soda cans_1: 2179434860248506829
+      soda cans_2: 1559935915205039835
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

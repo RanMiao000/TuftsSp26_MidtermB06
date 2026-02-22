@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 567b085a9eec34ef29ba36d00025f4b9
+guid: 2d89943e2aecf40869afdcb1e625d25d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3808327296473899443
-    second: KitchenBackground_0
+      213: 6429947174943073795
+    second: Small Fish 6_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KitchenBackground_0
+      name: Small Fish 6_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1152
-        height: 648
+        x: 1566
+        y: 438
+        width: 313
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3b120ceaf75e9d430800000000000000
-      internalID: 3808327296473899443
+      spriteID: 306220763e2cb3950800000000000000
+      internalID: 6429947174943073795
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      KitchenBackground_0: 3808327296473899443
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
