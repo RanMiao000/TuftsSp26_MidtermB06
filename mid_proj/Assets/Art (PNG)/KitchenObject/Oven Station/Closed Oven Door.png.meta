@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9a2bbcaa6524dc5409da06b155a43c2f
+guid: b1a249ae0fc174c6fa042318bf9aaeba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6043074571762628329
-    second: Kitchenbg_0
+      213: 8097475966845167930
+    second: Closed Oven Door_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kitchenbg_0
+      name: Closed Oven Door_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 117
         y: 0
-        width: 1280
-        height: 720
+        width: 1686
+        height: 755
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e67b113e405dd350800000000000000
-      internalID: 6043074571762628329
+      spriteID: a39a1155d73006070800000000000000
+      internalID: 8097475966845167930
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Kitchenbg_0: 6043074571762628329
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
