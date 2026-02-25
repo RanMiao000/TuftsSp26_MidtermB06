@@ -7,6 +7,12 @@ TagManager:
   - Rock
   - Base
   - Building
+  - Cheese
+  - Mushroom
+  - Pepperoni
+  - Onion
+  - Tomato
+  - Basil
   layers:
   - Default
   - TransparentFX
@@ -14,7 +20,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Quit/resume
   - 
   - 
   - 

@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     private Vector2 movement;
     private int currentLives;
     private bool isRespawning = false;
+    private int pizzaCount = 0;
+    private bool canDeliver = true;
 
     void Start()
     {
@@ -113,12 +115,37 @@ public class Player : MonoBehaviour
         isRespawning = false;
     }
 
+    public void AddPizza()
+    {
+        pizzaCount++;
+        Debug.Log("Pizza Baked! Total: " + pizzaCount);
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Building"))
         {
-            Debug.Log("You Win!");
-            Time.timeScale = 0;
+            if (canDeliver && pizzaCount > 0)
+            {
+                pizzaCount--;
+                Debug.Log("Pizza Delivered! Remaining: " + pizzaCount);
+                if (pizzaCount == 0)
+                {
+                    Debug.Log("You Win!");
+                    Time.timeScale = 0;
+                }
+                else
+                {
+                    StartCoroutine(DeliveryCooldown());
+                }
+            }
         }
+    }
+
+    IEnumerator DeliveryCooldown()
+    {
+        canDeliver = false;
+        yield return new WaitForSeconds(10f);
+        canDeliver = true;
     }
 }
