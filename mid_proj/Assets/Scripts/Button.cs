@@ -5,10 +5,12 @@ public class Button : MonoBehaviour
 {
     public static List<string> selectedIngredients = new List<string>();
 
+	private Color startColor;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        startColor = GetComponentInChildren<SpriteRenderer>().color;
     }
 
     // Update is called once per frame
@@ -25,5 +27,15 @@ public class Button : MonoBehaviour
             selectedIngredients.Add(ingredient);
             Debug.Log("Added ingredient: " + ingredient);
         }
+    }
+
+	 void OnMouseOver()
+    {
+        GetComponentInChildren<SpriteRenderer>().color = Color.green;
+    }
+
+	 void OnMouseExit()
+    {
+        GetComponentInChildren<SpriteRenderer>().color = startColor;
     }
 }

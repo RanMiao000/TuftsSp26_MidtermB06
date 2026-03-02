@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 605517e2b3e0a41feb32330958cd8306
+guid: 0567f21cc0f7b7f4ab4d5ed590804779
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7649688482173149600
-    second: Dough_Table_0
+      213: -3790122539649892744
+    second: KItchen_FloorTiles_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dough_Table_0
+      name: KItchen_FloorTiles_0
       rect:
         serializedVersion: 2
-        x: 241
-        y: 26
-        width: 180
-        height: 336
+        x: 0
+        y: 0
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 06e1ca1fad8d6d590800000000000000
-      internalID: -7649688482173149600
+      spriteID: 87e77f091a7c66bc0800000000000000
+      internalID: -3790122539649892744
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Dough_Table_0: -7649688482173149600
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

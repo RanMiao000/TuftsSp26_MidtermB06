@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Pin : MonoBehaviour
 {
@@ -8,6 +10,8 @@ public class Pin : MonoBehaviour
     private float originalY;
     private bool hitTop = false;
     private bool hitBottom = false;
+
+	public GameObject splatFlourVFX;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -42,6 +46,7 @@ public class Pin : MonoBehaviour
                 {
                     hitTop = true;
                     if (dough != null) dough.RegisterMove(true);
+					MakeSplat();
                 }
             }
             else if (newY <= originalY - (moveRange - 0.1f))
@@ -50,6 +55,7 @@ public class Pin : MonoBehaviour
                 {
                     hitBottom = true;
                     if (dough != null) dough.RegisterMove(false);
+					MakeSplat();
                 }
             }
 
@@ -58,4 +64,17 @@ public class Pin : MonoBehaviour
             if (newY > originalY - (moveRange * 0.8f)) hitBottom = false;
         }
     }
+
+	void MakeSplat()
+	{
+		GameObject newSplat = Instantiate(splatFlourVFX, transform.position, Quaternion.identity);
+		StartCoroutine(DestroySplat(newSplat));
+	}
+
+	IEnumerator DestroySplat(GameObject splat)
+	{
+		yield return new WaitForSeconds(5f);
+		Destroy(splat);
+	}
+
 }

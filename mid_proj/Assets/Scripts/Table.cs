@@ -50,7 +50,7 @@ public class Table : MonoBehaviour
                     // Check if this is the Pin (or part of it)
                     if (childSr.GetComponent<Pin>() != null || childSr.GetComponentInParent<Pin>() != null)
                     {
-                        childSr.sortingOrder = 30; // Higher than dough (20)
+                        //childSr.sortingOrder = 30; // Higher than dough (20)
                         // Move slightly forward in Z to ensure it catches mouse clicks before the dough
                         childSr.transform.localPosition = new Vector3(childSr.transform.localPosition.x, childSr.transform.localPosition.y, -1f);
                     }
