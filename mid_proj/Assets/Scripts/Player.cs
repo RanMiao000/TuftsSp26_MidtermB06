@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Player : MonoBehaviour
 {
@@ -10,7 +11,9 @@ public class Player : MonoBehaviour
     private Vector2 movement;
     private int currentLives;
     private bool isRespawning = false;
-    private int pizzaCount = 0;
+    
+    // Static list ensures inventory persists between scenes
+    public static List<string> pizzaInventory = new List<string>();
     private bool canDeliver = true;
 
     void Start()
@@ -115,21 +118,25 @@ public class Player : MonoBehaviour
         isRespawning = false;
     }
 
-    public void AddPizza()
+    // Static method so Oven can call it even if Player isn't in the Kitchen scene
+    public static void AddPizza(string pizzaName)
     {
-        pizzaCount++;
-        Debug.Log("Pizza Baked! Total: " + pizzaCount);
+        pizzaInventory.Add(pizzaName);
+        Debug.Log("Pizza Baked: " + pizzaName + "! Total: " + pizzaInventory.Count);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Building"))
         {
-            if (canDeliver && pizzaCount > 0)
+            if (canDeliver && pizzaInventory.Count > 0)
             {
-                pizzaCount--;
-                Debug.Log("Pizza Delivered! Remaining: " + pizzaCount);
-                if (pizzaCount == 0)
+                // Deliver the first pizza in the list
+                string deliveredPizza = pizzaInventory[0];
+                pizzaInventory.RemoveAt(0);
+                
+                Debug.Log("Pizza Delivered (" + deliveredPizza + ")! Remaining: " + pizzaInventory.Count);
+                if (pizzaInventory.Count == 0)
                 {
                     Debug.Log("You Win!");
                     Time.timeScale = 0;

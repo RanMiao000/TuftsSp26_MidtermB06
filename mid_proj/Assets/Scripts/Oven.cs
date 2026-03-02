@@ -34,6 +34,18 @@ public class Oven : MonoBehaviour
         yield return new WaitForSeconds(20f);
 
         if (sr) sr.sprite = originalSprite;
-        if (player != null) player.AddPizza();
+        
+        // Create a unique name based on ingredients
+        string pizzaName = "Plain Pizza";
+        if (Button.selectedIngredients.Count > 0)
+        {
+            pizzaName = string.Join("-", Button.selectedIngredients) + " Pizza";
+        }
+
+        // Add to static player inventory (works even if Player isn't in this scene)
+        Player.AddPizza(pizzaName);
+        
+        // Clear ingredients for the next pizza
+        Button.selectedIngredients.Clear();
     }
 }

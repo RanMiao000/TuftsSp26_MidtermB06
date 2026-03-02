@@ -132,3 +132,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2831fbde92a4a3a4492889d3c0cc37e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprites: []
+  panel: {fileID: 0}

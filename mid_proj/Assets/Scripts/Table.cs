@@ -46,8 +46,16 @@ public class Table : MonoBehaviour
                 {
                     // Ensure opacity
                     childSr.color = new Color(childSr.color.r, childSr.color.g, childSr.color.b, 1f);
-                    // Only bump up if it's behind or on the same layer as the panel
-                    if (childSr.sortingOrder <= 10) childSr.sortingOrder = 20;
+                    
+                    // Check if this is the Pin (or part of it)
+                    if (childSr.GetComponent<Pin>() != null || childSr.GetComponentInParent<Pin>() != null)
+                    {
+                        childSr.sortingOrder = 30; // Higher than dough (20)
+                        // Move slightly forward in Z to ensure it catches mouse clicks before the dough
+                        childSr.transform.localPosition = new Vector3(childSr.transform.localPosition.x, childSr.transform.localPosition.y, -1f);
+                    }
+                    // Otherwise, only bump up if it's behind or on the same layer as the panel
+                    else if (childSr.sortingOrder <= 10) childSr.sortingOrder = 20;
                 }
             }
         }

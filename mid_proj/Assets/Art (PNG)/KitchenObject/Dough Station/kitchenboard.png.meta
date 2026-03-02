@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f7377c9a5325d4993ad73648e863c1fe
+guid: 2c61628507498c64095032cb149e382f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4121636663339162602
-    second: Open Oven Door_0
+      213: -1946664695295477173
+    second: kitchenboard_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Open Oven Door_0
+      name: kitchenboard_0
       rect:
         serializedVersion: 2
-        x: 76
-        y: 298
-        width: 1768
-        height: 483
+        x: 0
+        y: 0
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aeb9e8b35bef23930800000000000000
-      internalID: 4121636663339162602
+      spriteID: b4a7e1406ce0cf4e0800000000000000
+      internalID: -1946664695295477173
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Open Oven Door_0: 4121636663339162602
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
