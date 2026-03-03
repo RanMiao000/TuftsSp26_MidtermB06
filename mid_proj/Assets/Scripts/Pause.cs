@@ -33,20 +33,20 @@ public class Pause : MonoBehaviour
                 // Check if this is the main panel object
                 if (sr.gameObject == popupPanel)
                 {
-                    sr.sortingOrder = 10; // Background depth
+                    //sr.sortingOrder = 10; // Background depth
                     continue; // Don't move the panel itself
                 }
 
                 // If it has a button script, bring to front
                 if (sr.GetComponentInParent<Resume>() != null || sr.GetComponentInParent<Quit>() != null)
                 {
-                    sr.sortingOrder = 20;
+                    //sr.sortingOrder = 20;
                     sr.transform.localPosition = new Vector3(sr.transform.localPosition.x, sr.transform.localPosition.y, -1f);
                 }
                 else
                 {
                     // Otherwise, treat it as background
-                    sr.sortingOrder = 10;
+                    //sr.sortingOrder = 10;
                     sr.transform.localPosition = new Vector3(sr.transform.localPosition.x, sr.transform.localPosition.y, 0f);
                 }
             }
