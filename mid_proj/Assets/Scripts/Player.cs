@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -76,7 +77,7 @@ public class Player : MonoBehaviour
         if (currentLives <= 0)
         {
             Debug.Log("Game Over");
-            Time.timeScale = 0;
+            SceneManager.LoadScene("EndLose");
         }
         else
         {
@@ -127,25 +128,13 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        // Check if we hit a target building for the Ocean_game_handler
+        Ocean_game_handler ogh = FindFirstObjectByType<Ocean_game_handler>();
+        if (ogh != null) ogh.CheckBuilding(collision.gameObject.tag);
+
         if (collision.gameObject.CompareTag("Building"))
         {
-            if (canDeliver && pizzaInventory.Count > 0)
-            {
-                // Deliver the first pizza in the list
-                string deliveredPizza = pizzaInventory[0];
-                pizzaInventory.RemoveAt(0);
-                
-                Debug.Log("Pizza Delivered (" + deliveredPizza + ")! Remaining: " + pizzaInventory.Count);
-                if (pizzaInventory.Count == 0)
-                {
-                    Debug.Log("You Win!");
-                    Time.timeScale = 0;
-                }
-                else
-                {
-                    StartCoroutine(DeliveryCooldown());
-                }
-            }
+            HandleDelivery();
         }
     }
 
@@ -154,5 +143,24 @@ public class Player : MonoBehaviour
         canDeliver = false;
         yield return new WaitForSeconds(10f);
         canDeliver = true;
+    }
+
+    private void HandleDelivery()
+    {
+        if (canDeliver && pizzaInventory.Count > 0)
+        {
+            string deliveredPizza = pizzaInventory[0];
+            pizzaInventory.RemoveAt(0);
+            Debug.Log("Pizza Delivered: " + deliveredPizza);
+            StartCoroutine(DeliveryCooldown());
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Ocean_game_handler ogh = FindFirstObjectByType<Ocean_game_handler>();
+        if (ogh != null) ogh.CheckBuilding(other.gameObject.tag);
+
+        if (other.gameObject.CompareTag("Building")) HandleDelivery();
     }
 }

@@ -14,6 +14,14 @@ TagManager:
   - Tomato
   - Basil
   - GameHandler
+  - b0_text
+  - b1_text
+  - b2_text
+  - b3_text
+  - build_0
+  - build_1
+  - build_2
+  - build_3
   layers:
   - Default
   - TransparentFX

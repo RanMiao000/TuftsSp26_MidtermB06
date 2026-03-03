@@ -67,14 +67,9 @@ public class Pin : MonoBehaviour
 
 	void MakeSplat()
 	{
+		if (!gameObject.activeInHierarchy) return; // Prevent crash if panel just closed
 		GameObject newSplat = Instantiate(splatFlourVFX, transform.position, Quaternion.identity);
-		StartCoroutine(DestroySplat(newSplat));
-	}
-
-	IEnumerator DestroySplat(GameObject splat)
-	{
-		yield return new WaitForSeconds(5f);
-		Destroy(splat);
+		Destroy(newSplat, 5f); // Auto-destroy after 5 seconds without using a Coroutine
 	}
 
 }

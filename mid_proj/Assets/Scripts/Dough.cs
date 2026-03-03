@@ -61,7 +61,13 @@ public class Dough : MonoBehaviour
 
             stage = 2;
             if (sr != null && sprites.Length > 1) sr.sprite = sprites[1];
-            if (panel != null) panel.SetActive(false);
+            if (panel != null) 
+            {
+                panel.SetActive(false);
+                // Re-enable player movement when panel closes automatically
+                PlayerMoveAround playerMove = FindFirstObjectByType<PlayerMoveAround>();
+                if (playerMove != null) playerMove.enabled = true;
+            }
             if (oven != null) oven.StartCooking();
         }
     }

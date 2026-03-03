@@ -5,12 +5,10 @@ public class Button : MonoBehaviour
 {
     public static List<string> selectedIngredients = new List<string>();
 
-	private Color startColor;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        startColor = GetComponentInChildren<SpriteRenderer>().color;
+        
     }
 
     // Update is called once per frame
@@ -19,23 +17,16 @@ public class Button : MonoBehaviour
         
     }
 
-    void OnMouseDown()
+    void OnCollisionStay2D(Collision2D collision)
     {
-        string ingredient = gameObject.tag;
-        if (!selectedIngredients.Contains(ingredient))
+        if (collision.gameObject.CompareTag("Player") && Input.GetKeyDown(KeyCode.X))
         {
-            selectedIngredients.Add(ingredient);
-            Debug.Log("Added ingredient: " + ingredient);
+            string ingredient = gameObject.tag;
+            if (!selectedIngredients.Contains(ingredient))
+            {
+                selectedIngredients.Add(ingredient);
+                Debug.Log("Added ingredient: " + ingredient);
+            }
         }
-    }
-
-	 void OnMouseOver()
-    {
-        GetComponentInChildren<SpriteRenderer>().color = Color.green;
-    }
-
-	 void OnMouseExit()
-    {
-        GetComponentInChildren<SpriteRenderer>().color = startColor;
     }
 }

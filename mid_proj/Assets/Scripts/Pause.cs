@@ -45,8 +45,7 @@ public class Pause : MonoBehaviour
                 }
                 else
                 {
-                    // Otherwise, treat it as background
-                    //sr.sortingOrder = 10;
+                    // Otherwise, treat it as backgrsr.sortingOrder = 10;
                     sr.transform.localPosition = new Vector3(sr.transform.localPosition.x, sr.transform.localPosition.y, 0f);
                 }
             }

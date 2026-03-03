@@ -17,8 +17,11 @@ public class Exit : MonoBehaviour
         
     }
 
-    void OnMouseDown()
+    void OnCollisionStay2D(Collision2D collision)
     {
-        SceneManager.LoadScene(sceneToLoad);
+        if (collision.gameObject.CompareTag("Player") && Input.GetKeyDown(KeyCode.X))
+        {
+            SceneManager.LoadScene(sceneToLoad);
+        }
     }
 }
