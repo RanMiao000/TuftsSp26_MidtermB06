@@ -116,10 +116,10 @@ TextureImporter:
       name: cheese_0
       rect:
         serializedVersion: 2
-        x: 215
-        y: 245
-        width: 291
-        height: 228
+        x: 216
+        y: 246
+        width: 289
+        height: 226
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5754805ec137b4c1dbb27ad76bd0a22d
     internalID: 0
     vertices: []
     indices: 
